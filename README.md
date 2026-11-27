@@ -1,6 +1,6 @@
 # void_links
 
-Version: 0.0.1
+Version: 0.0.2
 
 ## WORK & AI
 
@@ -18,7 +18,6 @@ Version: 0.0.1
 <img src="https://www.google.com/s2/favicons?domain=www.skills.sh&amp;sz=32" width="16" height="16" alt="" /> Skills https://www.skills.sh/  
 <img src="https://www.google.com/s2/favicons?domain=getdesign.md&amp;sz=32" width="16" height="16" alt="" /> DESIGN.md https://getdesign.md/  
 <img src="https://www.google.com/s2/favicons?domain=codex-pets.net&amp;sz=32" width="16" height="16" alt="" /> Codex Pets https://codex-pets.net/  
-<img src="https://www.google.com/s2/favicons?domain=feishu-cli.com&amp;sz=32" width="16" height="16" alt="" /> Feishu CLI https://feishu-cli.com/  
 <img src="https://www.google.com/s2/favicons?domain=cursor.directory&amp;sz=32" width="16" height="16" alt="" /> Cursor Directory https://cursor.directory/rules  
 <img src="https://www.google.com/s2/favicons?domain=midlibrary.io&amp;sz=32" width="16" height="16" alt="" /> Midlibrary https://midlibrary.io/sref-codes  
 <img src="https://www.google.com/s2/favicons?domain=civitai.com&amp;sz=32" width="16" height="16" alt="" /> Civitai https://civitai.com/  
@@ -141,7 +140,7 @@ Version: 0.0.1
 <img src="https://www.google.com/s2/favicons?domain=www.codedex.io&amp;sz=32" width="16" height="16" alt="" /> Codédex https://www.codedex.io/  
 <img src="https://www.google.com/s2/favicons?domain=www.wappalyzer.com&amp;sz=32" width="16" height="16" alt="" /> Wappalyzer https://www.wappalyzer.com/  
 <img src="https://www.google.com/s2/favicons?domain=app.rawgraphs.io&amp;sz=32" width="16" height="16" alt="" /> RAWGraphs https://app.rawgraphs.io/  
-<img src="https://www.google.com/s2/favicons?domain=markmap.js.org&amp;sz=32" width="16" height="16" alt="" /> Markmap https://markmap.js.org/repl  
+<img src="https://www.google.com/s2/favicons?domain=markmap.js.org&amp;sz=32" width="16" height="16" alt="" /> Markmap https://markmap.js.org/  
 <img src="https://www.google.com/s2/favicons?domain=linux.do&amp;sz=32" width="16" height="16" alt="" /> Linux DO https://linux.do/latest  
 <img src="https://www.google.com/s2/favicons?domain=v2ex.com&amp;sz=32" width="16" height="16" alt="" /> V2EX https://v2ex.com/  
 <img src="https://www.google.com/s2/favicons?domain=a16z.com&amp;sz=32" width="16" height="16" alt="" /> a16z https://a16z.com/news-content/  
@@ -189,7 +188,6 @@ Version: 0.0.1
 <img src="https://www.google.com/s2/favicons?domain=dontkillmyapp.com&amp;sz=32" width="16" height="16" alt="" /> DontKillMyApp https://dontkillmyapp.com/  
 <img src="https://www.google.com/s2/favicons?domain=3g.gljlw.com&amp;sz=32" width="16" height="16" alt="" /> Music Tool https://3g.gljlw.com/music/wy/  
 <img src="https://www.google.com/s2/favicons?domain=freesound.org&amp;sz=32" width="16" height="16" alt="" /> Freesound https://freesound.org/  
-<img src="https://www.google.com/s2/favicons?domain=www.audiogen.co&amp;sz=32" width="16" height="16" alt="" /> Audiogen https://www.audiogen.co/  
 <img src="https://www.google.com/s2/favicons?domain=www.stableaudio.com&amp;sz=32" width="16" height="16" alt="" /> Stable Audio https://www.stableaudio.com/  
 <img src="https://www.google.com/s2/favicons?domain=uvronline.app&amp;sz=32" width="16" height="16" alt="" /> UVR Online https://uvronline.app/ai  
 <img src="https://www.google.com/s2/favicons?domain=tool.liumingye.cn&amp;sz=32" width="16" height="16" alt="" /> Unlock Music https://tool.liumingye.cn/unlock-music/  
@@ -210,6 +208,6 @@ Version: 0.0.1
 <img src="https://www.google.com/s2/favicons?domain=www.17ce.com&amp;sz=32" width="16" height="16" alt="" /> 17CE https://www.17ce.com/  
 <img src="https://www.google.com/s2/favicons?domain=ping.pe&amp;sz=32" width="16" height="16" alt="" /> Ping.pe https://ping.pe/  
 <img src="https://www.google.com/s2/favicons?domain=ping0.cc&amp;sz=32" width="16" height="16" alt="" /> Ping0 https://ping0.cc/  
-<img src="https://www.google.com/s2/favicons?domain=vps789.com&amp;sz=32" width="16" height="16" alt="" /> VPS789 https://vps789.com/hostmonitor/  
+<img src="https://www.google.com/s2/favicons?domain=vps789.com&amp;sz=32" width="16" height="16" alt="" /> VPS789 https://vps789.com/  
 <img src="https://www.google.com/s2/favicons?domain=pagespeed.web.dev&amp;sz=32" width="16" height="16" alt="" /> PageSpeed Insights https://pagespeed.web.dev/  
 <img src="https://www.google.com/s2/favicons?domain=kejilion.pro&amp;sz=32" width="16" height="16" alt="" /> KEJILION https://kejilion.pro/  
