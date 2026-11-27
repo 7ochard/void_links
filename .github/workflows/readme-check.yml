@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Format, favicon, duplicates, version
+      - name: Format, favicon, duplicates, VERSION
         shell: python
         run: |
           import re, sys, os
@@ -26,8 +26,10 @@ jobs:
           version = open("VERSION", encoding="utf-8").read().strip()
           pat = re.compile(r'^<img src="https://www\.google\.com/s2/favicons\?domain=([^&"]+)&amp;sz=32" width="16" height="16" alt="" /> (.+) (https?://\S+)  $')
           errors, seen_url, seen_host, n = [], {}, {}, 0
-          if f"Version: {version}" not in lines:
-              errors.append(f"README 的 Version 与 VERSION 文件 ({version}) 不一致")
+          if not re.fullmatch(r"\d+\.\d+\.\d+", version):
+              errors.append(f"VERSION 文件格式应为 x.y.z，当前为 {version!r}")
+          if any(re.match(r"^\s*Version\s*:", l, re.I) for l in lines):
+              errors.append("README 不应显示版本号，版本号只写在 VERSION 文件")
           for i, line in enumerate(lines, 1):
               if not re.search(r'https?://', line) or line.startswith("#"):
                   continue
