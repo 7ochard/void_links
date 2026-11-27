@@ -1,7 +1,5 @@
 # void_links
 
-Version: 0.0.2
-
 ## WORK & AI
 
 <img src="https://www.google.com/s2/favicons?domain=youmind.com&amp;sz=32" width="16" height="16" alt="" /> YouMind https://youmind.com/  
