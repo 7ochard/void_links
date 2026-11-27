@@ -3,9 +3,9 @@ name: README check
 on:
   push:
     branches: [main]
-    paths: [README.md, VERSION]
+    paths: [README.md, VERSION, .github/workflows/readme-check.yml]
   pull_request:
-    paths: [README.md, VERSION]
+    paths: [README.md, VERSION, .github/workflows/readme-check.yml]
   workflow_dispatch:
 
 permissions:
