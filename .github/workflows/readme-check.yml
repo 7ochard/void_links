@@ -1,0 +1,65 @@
+name: README check
+
+on:
+  push:
+    branches: [main]
+    paths: [README.md, VERSION]
+  pull_request:
+    paths: [README.md, VERSION]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Format, favicon, duplicates, version
+        shell: python
+        run: |
+          import re, sys, os
+          from urllib.parse import urlparse
+          lines = open("README.md", encoding="utf-8").read().splitlines()
+          version = open("VERSION", encoding="utf-8").read().strip()
+          pat = re.compile(r'^<img src="https://www\.google\.com/s2/favicons\?domain=([^&"]+)&amp;sz=32" width="16" height="16" alt="" /> (.+) (https?://\S+)  $')
+          errors, seen_url, seen_host, n = [], {}, {}, 0
+          if f"Version: {version}" not in lines:
+              errors.append(f"README 的 Version 与 VERSION 文件 ({version}) 不一致")
+          for i, line in enumerate(lines, 1):
+              if not re.search(r'https?://', line) or line.startswith("#"):
+                  continue
+              n += 1
+              m = pat.match(line)
+              if not m:
+                  errors.append(f"第 {i} 行格式不符（favicon/名称/URL/行尾两个空格）: {line[:90]}")
+                  continue
+              dom, name, url = m.groups()
+              host = urlparse(url).hostname or ""
+              if dom != host:
+                  errors.append(f"第 {i} 行 favicon domain={dom} 与 URL 主机 {host} 不一致")
+              key = url.rstrip("/").lower()
+              if key in seen_url:
+                  errors.append(f"第 {i} 行 URL 与第 {seen_url[key]} 行重复: {url}")
+              seen_url.setdefault(key, i)
+              seen_host.setdefault(host.removeprefix("www."), []).append(i)
+          warn = [f"同域名多条（请确认是否重复）: {h} 行 {v}" for h, v in seen_host.items() if len(v) > 1 and h not in {"github.com", "gitlab.com", "huggingface.co"}]
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as s:
+              s.write(f"## README 格式检查\n\n链接 {n} 条，错误 {len(errors)} 个，提示 {len(warn)} 个\n\n")
+              for e in errors: s.write(f"- ❌ {e}\n")
+              for w in warn: s.write(f"- ⚠️ {w}\n")
+          for e in errors: print(f"::error file=README.md::{e}")
+          for w in warn: print(f"::warning file=README.md::{w}")
+          sys.exit(1 if errors else 0)
+
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress --max-retries 2 --timeout 20
+            --accept 200..=299,403,429
+            --exclude 'google\.com/s2/favicons'
+            README.md
+          fail: true
