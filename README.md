@@ -16,6 +16,7 @@
 <img src="https://www.google.com/s2/favicons?domain=www.skills.sh&amp;sz=32" width="16" height="16" alt="" /> Skills https://www.skills.sh/  
 <img src="https://www.google.com/s2/favicons?domain=getdesign.md&amp;sz=32" width="16" height="16" alt="" /> DESIGN.md https://getdesign.md/  
 <img src="https://www.google.com/s2/favicons?domain=codex-pets.net&amp;sz=32" width="16" height="16" alt="" /> Codex Pets https://codex-pets.net/  
+<img src="https://www.google.com/s2/favicons?domain=feishu-cli.com&amp;sz=32" width="16" height="16" alt="" /> Feishu CLI https://feishu-cli.com/  
 <img src="https://www.google.com/s2/favicons?domain=cursor.directory&amp;sz=32" width="16" height="16" alt="" /> Cursor Directory https://cursor.directory/rules  
 <img src="https://www.google.com/s2/favicons?domain=midlibrary.io&amp;sz=32" width="16" height="16" alt="" /> Midlibrary https://midlibrary.io/sref-codes  
 <img src="https://www.google.com/s2/favicons?domain=civitai.com&amp;sz=32" width="16" height="16" alt="" /> Civitai https://civitai.com/  
